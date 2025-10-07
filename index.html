@@ -3,7 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio de Cle                ass="certificate-card">
+    <meta name="description" content="Portfólio de Cle                      <div class="certificate-card">
+                    <div class="certificate-header">
+                        <div class="certificate-icon">🔧</div>
+                        <div class="certificate-info">
+                            <h3>Certificado de Profissional de Suporte de TI do Google (v2)</h3>
+                            <p class="certificate-institution">Google via Coursera</p>
+                        </div>
+                        <div class="certificate-date">2025</div>
+                    </div>
+                    
+                    <div class="certificate-image-container">
+                        <img src="img/google-it-certificate.jpg" alt="Certificado Google IT Support" class="certificate-image">
+                        <div class="certificate-placeholder">
+                            <span>📜</span>
+                            <p>Adicione a imagem do certificado</p>
+                            <small>Salve como: img/google-it-certificate.jpg</small>
+                        </div>
+                    </div>
+                    
+                    <p class="certificate-description">Certificação abrangente em suporte de TI incluindo solução de problemas, atendimento ao cliente, redes, sistemas operacionais, administração de sistemas e segurança. Programa de 5 cursos com 137 horas de aprendizagem e avaliações práticas.</p>
+                    
+                    <div class="certificate-skills">
+                        <span class="skill-tag">Suporte de TI</span>
+                        <span class="skill-tag">Redes</span>
+                        <span class="skill-tag">Sistemas Operacionais</span>
+                        <span class="skill-tag">Segurança</span>
+                        <span class="skill-tag">Troubleshooting</span>
+                    </div>
+                </div>   ass="certificate-card">
                     <div class="certificate-icon">🔧</div>
                     <h3>Certificado de Profissional de Suporte de TI do Google (v2)</h3>
                     <p class="certificate-institution">Google via Coursera</p>
@@ -276,6 +304,33 @@
             
             // Verificar imagem imediatamente
             checkImage();
+
+            // Script para gerenciar imagens dos certificados
+            const certificateImages = document.querySelectorAll('.certificate-image');
+            const certificatePlaceholders = document.querySelectorAll('.certificate-placeholder');
+            
+            certificateImages.forEach((img, index) => {
+                const placeholder = certificatePlaceholders[index];
+                
+                function checkCertificateImage() {
+                    if (img.complete && img.naturalWidth > 0) {
+                        img.style.display = 'block';
+                        if (placeholder) placeholder.style.display = 'none';
+                    } else {
+                        img.style.display = 'none';
+                        if (placeholder) placeholder.style.display = 'flex';
+                    }
+                }
+                
+                img.addEventListener('load', checkCertificateImage);
+                img.addEventListener('error', function() {
+                    img.style.display = 'none';
+                    if (placeholder) placeholder.style.display = 'flex';
+                });
+                
+                // Verificar imagem imediatamente
+                checkCertificateImage();
+            });
 
             // Animação das barras de habilidades
             const animateSkills = () => {
