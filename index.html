@@ -16,7 +16,7 @@
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://thiagosg68.github.io/Portfolio/">
-    <meta property="twitter:title" content="Cleiton Gomes - Desenvolvedor Full Stack">
+    <meta property="twitter:title" content="Cleiton Gomesns - Desenvolvedor Full Stack">
     <meta property="twitter:description" content="Portfólio profissional com projetos e experiências em desenvolvimento web.">
     
     <title>Cleiton dos Santos Gomes - Portfólio | Desenvolvedor Full Stack</title>
@@ -33,11 +33,28 @@
     <div class="container">
         <section class="section">
             <h2>Sobre Mim</h2>
-            <p style="text-align: center; font-size: 1.1rem; max-width: 800px; margin: 0 auto;">
-                Desenvolvedor apaixonado por tecnologia, sempre buscando aprender novas ferramentas 
-                e criar soluções que fazem a diferença. Com experiência em desenvolvimento web 
-                e mobile, estou sempre pronto para novos desafios.
-            </p>
+            <div class="about-content">
+                <div class="profile-photo">
+                    <img src="img/profile.jpg" alt="Foto de Cleiton Gomes" class="profile-img">
+                    <div class="photo-placeholder">
+                        <span>📷</span>
+                        <p>Adicione sua foto aqui</p>
+                        <small>Salve como: img/profile.jpg</small>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>
+                        Desenvolvedor apaixonado por tecnologia, sempre buscando aprender novas ferramentas 
+                        e criar soluções que fazem a diferença. Com experiência em desenvolvimento web 
+                        e mobile, estou sempre pronto para novos desafios.
+                    </p>
+                    <p>
+                        Especializado em criar interfaces modernas e funcionais, com foco na experiência do usuário 
+                        e performance. Sempre em busca de novas tecnologias e metodologias que possam agregar 
+                        valor aos projetos.
+                    </p>
+                </div>
+            </div>
         </section>
 
         <section class="section">
@@ -89,5 +106,29 @@
             <p>&copy; 2025 Cleiton Gomes. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <script>
+        // Script para mostrar a foto quando ela for carregada
+        document.addEventListener('DOMContentLoaded', function() {
+            const profileImg = document.querySelector('.profile-img');
+            const placeholder = document.querySelector('.photo-placeholder');
+            
+            profileImg.addEventListener('load', function() {
+                profileImg.style.display = 'block';
+                placeholder.style.display = 'none';
+            });
+            
+            profileImg.addEventListener('error', function() {
+                profileImg.style.display = 'none';
+                placeholder.style.display = 'flex';
+            });
+            
+            // Verificar se a imagem já está carregada (caso seja do cache)
+            if (profileImg.complete && profileImg.naturalWidth > 0) {
+                profileImg.style.display = 'block';
+                placeholder.style.display = 'none';
+            }
+        });
+    </script>
 </body>
 </html>

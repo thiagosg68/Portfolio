@@ -113,3 +113,204 @@ footer {
     padding: 2rem 0;
     color: #666;
 }
+
+/* Estilos para a seção Sobre Mim */
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.profile-photo {
+    flex: 0 0 250px;
+    position: relative;
+}
+
+.profile-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #667eea;
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+    transition: transform 0.3s ease;
+    display: none; /* Escondida até a foto ser adicionada */
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+.photo-placeholder {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border: 3px dashed #667eea;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #667eea;
+    transition: all 0.3s ease;
+}
+
+.photo-placeholder:hover {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    transform: scale(1.02);
+}
+
+.photo-placeholder span {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.photo-placeholder p {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.photo-placeholder small {
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+    
+    .profile-photo {
+        flex: none;
+    }
+    
+    .profile-img,
+    .photo-placeholder {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .about-text p {
+        text-align: center;
+    }
+}
+
+/* Estilos para a seção Sobre Mim */
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.profile-photo {
+    flex: 0 0 250px;
+    position: relative;
+}
+
+.profile-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #667eea;
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+.photo-placeholder {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border: 3px dashed #667eea;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #667eea;
+    transition: all 0.3s ease;
+}
+
+.photo-placeholder:hover {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    transform: scale(1.02);
+}
+
+.photo-placeholder span {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.photo-placeholder p {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.photo-placeholder small {
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+    
+    .profile-photo {
+        flex: none;
+    }
+    
+    .profile-img,
+    .photo-placeholder {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .about-text p {
+        text-align: center;
+    }
+}
