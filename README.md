@@ -1,4 +1,4 @@
-# Portfolio - Thiago Silva
+# Portfolio - Cleiton Gomes
 
 🌐 **Site ao vivo**: [https://thiagosg68.github.io/Portfolio/](https://thiagosg68.github.io/Portfolio/)
 
@@ -67,4 +67,4 @@ npx live-server
 
 ⭐ **Se este projeto te ajudou, deixe uma estrela!**
 
-© 2025 Thiago Silva - Todos os direitos reservados.
+© 2025 Cleiton Gomes - Todos os direitos reservados.
