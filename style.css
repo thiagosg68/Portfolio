@@ -137,7 +137,7 @@ footer {
     border: 5px solid #667eea;
     box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
     transition: transform 0.3s ease;
-    display: none; /* Escondida até a foto ser adicionada */
+    display: block; /* Mostra a imagem por padrão */
 }
 
 .profile-img:hover {

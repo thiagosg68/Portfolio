@@ -35,7 +35,7 @@
             <h2>Sobre Mim</h2>
             <div class="about-content">
                 <div class="profile-photo">
-                    <img src="img/Imagem do WhatsApp de 2025-10-07 à(s) 08.59.11_c83259a5.jpg" alt="Foto de Cleiton Gomes" class="profile-img">
+                    <img src="img/profile.jpg" alt="Foto de Cleiton Gomes" class="profile-img">
                     <div class="photo-placeholder">
                         <span>📷</span>
                         <p>Adicione sua foto aqui</p>
@@ -256,26 +256,30 @@
     </footer>
 
     <script>
-        // Script para mostrar a foto quando ela for carregada
+        // Script para gerenciar foto de perfil e animações
         document.addEventListener('DOMContentLoaded', function() {
             const profileImg = document.querySelector('.profile-img');
             const placeholder = document.querySelector('.photo-placeholder');
             
-            profileImg.addEventListener('load', function() {
-                profileImg.style.display = 'block';
-                placeholder.style.display = 'none';
-            });
+            // Função para mostrar/esconder foto
+            function checkImage() {
+                if (profileImg.complete && profileImg.naturalWidth > 0) {
+                    profileImg.style.display = 'block';
+                    placeholder.style.display = 'none';
+                } else {
+                    profileImg.style.display = 'none';
+                    placeholder.style.display = 'flex';
+                }
+            }
             
+            profileImg.addEventListener('load', checkImage);
             profileImg.addEventListener('error', function() {
                 profileImg.style.display = 'none';
                 placeholder.style.display = 'flex';
             });
             
-            // Verificar se a imagem já está carregada (caso seja do cache)
-            if (profileImg.complete && profileImg.naturalWidth > 0) {
-                profileImg.style.display = 'block';
-                placeholder.style.display = 'none';
-            }
+            // Verificar imagem imediatamente
+            checkImage();
 
             // Animação das barras de habilidades
             const animateSkills = () => {
