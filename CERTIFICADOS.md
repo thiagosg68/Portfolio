@@ -14,7 +14,7 @@
 ### 3. Colete as informações de cada certificado:
 Para cada certificado, anote:
 - ✅ **Nome do certificado/curso**
-- ✅ **Instituição ou organização emissora**  
+- ✅ **Instituição ou organização emissora**
 - ✅ **Data de emissão** (ano)
 - ✅ **Descrição** (se houver)
 
@@ -28,9 +28,9 @@ Para cada certificado, anote:
 ### Substitua cada certificado template:
 ```html
 <div class="certificate-card">
-    <div class="certificate-icon">💻</div> <!-- Escolha emoji -->
+    <div class="certificate-icon">🌐</div> <!-- Escolha emoji -->
     <h3>[SEU CERTIFICADO AQUI]</h3>
-    <p class="certificate-institution">[SUA INSTITUIÇÃO AQUI]</p>
+    <p class="certificate-institution">SUA INSTITUIÇÃO AQUI]</p>
     <p class="certificate-description">[SUA DESCRIÇÃO AQUI]</p>
     <div class="certificate-date">[ANO AQUI]</div>
 </div>
@@ -39,7 +39,7 @@ Para cada certificado, anote:
 ## 🎨 Emojis Sugeridos por Área:
 
 - **💻** - Programação Geral
-- **🌐** - Desenvolvimento Web  
+- **🌐** - Desenvolvimento Web
 - **📱** - Desenvolvimento Mobile
 - **🎓** - Cursos Acadêmicos
 - **⚛️** - React/Frontend
@@ -65,7 +65,7 @@ Para cada certificado, anote:
 ## 🚀 Depois de editar:
 1. Salve o arquivo
 2. Execute: `git add .`
-3. Execute: `git commit -m "Atualiza certificados reais do LinkedIn"`  
+3. Execute: `git commit -m "Atualiza certificados reais do LinkedIn"`
 4. Execute: `git push`
 5. Aguarde alguns minutos para o site atualizar
 
