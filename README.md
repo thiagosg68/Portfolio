@@ -60,7 +60,7 @@ npx live-server
 ## 📞 Contato
 
 - 📧 **Email**: [seu-email@exemplo.com](mailto:seu-email@exemplo.com)
-- 💼 **LinkedIn**: [linkedin.com/in/seu-perfil](https://linkedin.com/in/seu-perfil)
+- 💼 **LinkedIn**: [linkedin.com/in/seu-perfil](www.linkedin.com/in/cleiton-dos-santos-gomes-259a882aa)
 - 🐙 **GitHub**: [github.com/thiagosg68](https://github.com/thiagosg68)
 
 ---
